@@ -1,0 +1,344 @@
+/*Creator*/
+
+.creator{
+    background-color: nth($color, 4);
+    padding: 20px;
+    color: nth($color, 3);
+    h3{
+        font-weight: bolder;
+        color: nth($color, 1);
+        opacity: 0.7;
+    }
+    p h3{
+        font-family: nth($font-family, 1);
+    } 
+    p{
+        letter-spacing: 1px;
+        font-weight: lighter;
+    }
+    .creator-header{
+        .large-title{
+            font-family: nth($font-family, 1 );
+            color: nth($color, 1);
+            opacity: 0.3;
+        }
+    } 
+    .creator-main{
+        
+        .container-presentation{
+           padding-top: 2rem;
+            .resume{
+                h3{
+                    padding-bottom: 1rem;
+                }
+                .text-resume{
+                    img{
+                        margin: 1rem auto 2rem auto;
+                        float: right;
+                        max-width: 21.96vw;
+                    }
+                }
+            }
+            .whoIs{
+                padding-top: 2rem;
+                h3{
+                    padding-bottom: 1rem;
+                }
+            }     
+        }
+        .container-earlyLife{
+            padding-top: 2rem;
+            h3{
+                padding-bottom: 1rem;
+            }
+            .earlyLife{
+                img{
+                    margin: 1rem 2rem 1rem auto;
+                    float: left;
+                    max-width: 21.96vw;
+                }
+            }
+        }         
+        .container-thrills{
+            padding-top: 2rem;
+            h3{
+                padding-bottom: 1rem;
+            }
+            img{
+                width: 100vh;
+                border-radius: 5px;
+                margin: 1.5rem 0 1.5rem 0;
+            }
+        }
+        .container-television{
+            padding-top: 2rem;
+            h3{
+                padding-bottom: 1rem;
+            }
+            .television{                
+                img{
+                    margin: 1rem auto 1rem 1rem;
+                    float: right;
+                    max-width: 21.96vw;
+                }
+            }
+        }
+        .container-laterWorks{
+            padding-top: 2rem;
+            h3{
+                padding-bottom: 1rem;
+            }
+        }
+        .container-personalLife{
+            padding-top: 2rem;
+            h3{
+                padding-bottom: 1rem;
+            }
+            .personalLife{      
+                img{
+                    float: left;
+                    margin: auto 3rem auto auto;
+                }
+            }
+        }
+        .container-gallery{
+            background-color: black;
+            margin-top: 2rem;
+            width: 100%;
+            padding: 0.5rem 0 2rem 0;
+            h3{
+                padding-bottom: 1rem;
+                padding-left: 1rem;
+                color: nth($color, 3)
+            }
+            .photoGallery-lg{
+                display: flex;
+                align-content: center;
+                align-items: center;                
+                .carousel{   
+                    .carousel-inner{
+                        width: 100%;          
+                        .conjunto-img{
+                            @extend %flex;
+                            justify-content: center;
+                            img{
+                                width: 40%;
+                                margin: 0 1rem 0 1rem;  
+                            }
+                        }      
+                    }
+                }
+                .carousel-control-next-icon{
+                    margin-right: -50px;
+                }
+                .carousel-control-prev-icon{
+                    margin-left: -50px;
+                }
+            }
+        }   
+    }
+}
+
+@media screen and(min-width: 1024px){
+.creator{ 
+    h3{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 18px;
+    }
+    .creator-header{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        margin: 0 2rem 0 2rem;
+        .large-title{
+            font-size: 8rem;       
+        }
+    }
+    .creator-main{
+        margin: 0px 60px 0px 60px;
+    }  
+    .container-laterWorks{
+        .books{
+            background-color: black;
+            border-radius: 5px;
+            margin: 1rem 0 1rem 0;
+            padding: 1rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-items: stretch;
+            img{
+                width: 15%;
+            }
+        }
+    }
+    .photoGallery-sm{
+        display: none;
+    }
+}  
+}
+
+@media screen  and(max-width:1023px) and(min-width:576px){
+    .creator{
+        h3{
+            font-size: 1.3rem;
+        }
+        p{
+            font-size: 16px;
+        }
+        .creator-header{
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            margin: 0 auto 0 auto;
+            .large-title{
+                font-size: 6rem;
+                position: absolute;
+                left: 2rem;
+                top: 4rem;         
+            }
+            .header-title{
+                margin: 30px auto 20px 0px;           
+            }
+        } 
+        .container-laterWorks{
+            .books{
+                background-color: black;
+                border-radius: 5px;
+                margin: 1rem 0 1rem 0;
+                padding: 1rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                align-items: stretch;
+                img{
+                    width: 20%;
+                }
+            }
+        }  
+        .photoGallery-sm{
+            display: none;
+        }
+    } 
+}
+
+@media screen and(max-width:575px){
+    .large-title{
+        display: none;
+    }
+    .creator-main{
+        margin-left: 20px;
+        margin-right: 20px;
+        .container-presentation{
+            padding-top: 2rem;
+            .resume{
+                h3{
+                    padding-bottom: 1rem;
+                }
+                .text-resume{
+                    img{
+                        padding-left: 20px;
+                    }
+                }
+            }
+            .whoIs{
+                padding-top: 2rem;
+                h3{
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+        .container-earlyLife{
+            padding-top: 2rem;
+            h3{
+                padding-bottom: 1rem;
+            }
+            .earlyLife{
+                p{
+                    img{
+                        padding-right: 20px;
+                    }
+                }
+            }
+        }
+        .container-thrills{
+            padding-top: 2rem;
+            h3{
+                padding-bottom: 1rem;
+            }
+        }
+        .container-television{
+            padding-top: 2rem;
+            h3{
+                padding-bottom: 1rem;
+            }
+            .television{
+                p{
+                    img{
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }
+        .container-laterWorks{
+            padding-top: 2rem;
+            h3{
+                padding-bottom: 1rem;
+            }
+            .books{
+                background-color: black;
+                border-radius: 5px;
+                margin: 1rem 0 1rem 0;
+                padding: 1rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                flex-wrap: wrap;    
+                img{
+                    width: 40%;
+                    margin: 10px;
+                }
+            }
+        }
+        .container-personalLife{
+            padding-top: 2rem;
+            .personalLife{
+                p{
+                    img{
+                        padding-top: 1rem;
+                        padding-bottom: 1rem;
+                    }
+                }
+            }
+        }
+        .container-gallery{
+            margin: 2rem 0 1.5rem 0;
+            width: 100%;
+            .photoGallery-lg{
+                display: none !important;
+            }
+            .photoGallery-sm{
+                padding: 0.5rem;
+                .carousel-inner{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+
+          
+        
+

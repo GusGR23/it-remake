@@ -1,0 +1,76 @@
+/*Header*/
+header{
+    background-image: nth($gradient, 1);
+    box-shadow: 0px 10px rgb(36, 2, 2);
+    .logo{
+        padding-left: 15px;
+        margin-left: 40px;
+        max-width: 90px;
+    }
+    .selection{
+        border-top: 2px solid red;
+        border-bottom: 2px solid red;
+        
+    }
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler-icon{
+    color:red;
+}
+.navbar-nav{
+    font-family: nth($font-family, 2);
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+    a{
+        color: red !important;
+        padding: 0px;
+    }
+}
+
+
+
+.bg-dark{
+    background-color: rgba(0, 0, 0, 0)!important;
+}
+
+#navbarNav{
+    justify-content: flex-end !important;
+    padding-right: 15px;
+    li{
+        margin-right: 40px ;
+    }
+}
+@media screen and(min-width:992px){
+    .navbar-nav{
+        
+        a{
+            
+            &:not(.selection):hover{
+                border-top: 2px solid red !important;
+                border-bottom: 2px solid red !important;
+                color: red !important;
+            }
+        }
+    }
+}
+@media screen and (max-width: 991px){
+    .navbar-brand{
+        
+        margin: 0 auto 0 auto;
+    }
+    .navbar-toggler{
+        padding-right: 18px;
+    }
+    .navbar-nav{
+                
+        a{
+            
+            &:not(.selection):hover{
+                color: rgb(63, 4, 4) !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+body{
+    height: 100%;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    list-style-type: none;
+}
+li {
+    list-style-type: none;
+    a {
+        text-decoration: none;
+    }
+}
+
+/*Fuentes*/
+@font-face {
+	font-family: "it-font-normal";
+	src: url(../assets/fonts/itfont.otf);
+}
+
+$font-family:
+'Do Hyeon', 
+"it-font-normal",
+'Times new roman';
+
+$gradient: 
+linear-gradient(#350202,black),
+linear-gradient(black, #350202);
+
+$color:
+#350202,
+black,
+#9c9a9a,
+#212529,
+#efb810;
+
+/*Extends*/
+%flex {
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+/*Clases*/
+.bgGradientH{
+    background-image: nth($gradient, 1) !important;
+}
+.bggradientF{
+    background-image: nth($gradient, 2);
+}
