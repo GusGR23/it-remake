@@ -3,7 +3,7 @@
 .creator{
     background-color: nth($color, 4);
     padding: 20px;
-    color: nth($color, 3);
+    color: nth($color, 6);
     h3{
         font-weight: bolder;
         color: nth($color, 1);
@@ -95,7 +95,7 @@
                 padding-bottom: 1rem;
             }
             .personalLife{      
-                img{
+                .p-img-personalLife{
                     float: left;
                     margin: auto 3rem auto auto;
                 }
@@ -176,6 +176,13 @@
             }
         }
     }
+    .container-personalLife{
+        .personalLife{
+            .img-personalLife{
+               display: none;
+            }
+        }
+    }
     .photoGallery-sm{
         display: none;
     }
@@ -222,6 +229,13 @@
                 }
             }
         }  
+        .container-personalLife{
+            .personalLife{
+                .img-personalLife{
+                   display: none;
+                }
+            }
+        }
         .photoGallery-sm{
             display: none;
         }
@@ -309,10 +323,18 @@
         .container-personalLife{
             padding-top: 2rem;
             .personalLife{
+                display: flex;
+                flex-direction: column;
+                
+                .img-personalLife{
+                    margin: 0 auto;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    width: 60%;
+                }
                 p{
-                    img{
-                        padding-top: 1rem;
-                        padding-bottom: 1rem;
+                    .p-img-personalLife{
+                        display: none;
                     }
                 }
             }

@@ -83,6 +83,9 @@ header .selection {
 }
 
 @media screen and (min-width: 992px) {
+  .navbar-nav {
+    font-size: 1.3rem;
+  }
   .navbar-nav a:not(.selection):hover {
     border-top: 2px solid red !important;
     border-bottom: 2px solid red !important;
@@ -98,6 +101,9 @@ header .selection {
     padding-right: 18px;
   }
 
+  .navbar-nav {
+    font-size: 1.1rem;
+  }
   .navbar-nav a:not(.selection):hover {
     color: #3f0404 !important;
   }
@@ -658,9 +664,9 @@ h2 {
 }
 /*Creator*/
 .creator {
-  background-color: #212529;
+  background-color: #282a2e;
   padding: 20px;
-  color: #9c9a9a;
+  color: #c7c2c2;
 }
 .creator h3 {
   font-weight: bolder;
@@ -741,7 +747,7 @@ h2 {
 .creator .creator-main .container-personalLife h3 {
   padding-bottom: 1rem;
 }
-.creator .creator-main .container-personalLife .personalLife img {
+.creator .creator-main .container-personalLife .personalLife .p-img-personalLife {
   float: left;
   margin: auto 3rem auto auto;
 }
@@ -812,6 +818,9 @@ h2 {
   .creator .container-laterWorks .books img {
     width: 15%;
   }
+  .creator .container-personalLife .personalLife .img-personalLife {
+    display: none;
+  }
   .creator .photoGallery-sm {
     display: none;
   }
@@ -852,6 +861,9 @@ h2 {
   }
   .creator .container-laterWorks .books img {
     width: 20%;
+  }
+  .creator .container-personalLife .personalLife .img-personalLife {
+    display: none;
   }
   .creator .photoGallery-sm {
     display: none;
@@ -928,9 +940,18 @@ h2 {
   .creator-main .container-personalLife {
     padding-top: 2rem;
   }
-  .creator-main .container-personalLife .personalLife p img {
+  .creator-main .container-personalLife .personalLife {
+    display: flex;
+    flex-direction: column;
+  }
+  .creator-main .container-personalLife .personalLife .img-personalLife {
+    margin: 0 auto;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    width: 60%;
+  }
+  .creator-main .container-personalLife .personalLife p .p-img-personalLife {
+    display: none;
   }
   .creator-main .container-gallery {
     margin: 2rem 0 1.5rem 0;
